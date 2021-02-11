@@ -1,0 +1,47 @@
+
+<html>
+   
+    <title>Exercise 2</title>
+
+    <!-- Write a Javascript program to show the day today, and 
+    calculate how many days are left until the next Sunday. Write the result in the HTML page. -->
+
+<body>
+    <ul>
+        <br>
+    <h1>TODAY IS <span id="dateToday"> </span></h1>
+
+    <script>
+
+        var Today = new Date();
+        document.getElementById("dateToday").innerHTML =
+         getDay(Today.getDay()) + ". The total days until next Sunday is " +
+          (7 - Today.getDay() + 7) + ".";
+
+        function getDay(day) {
+            let dayLetter;
+            switch (day) {
+                case 1:
+                    dayLetter = "Monday";
+                    break;
+                case 2:
+                    dayLetter = "Tuesday";
+                    break;
+                case 3:
+                    dayLetter = "Wednesday";
+                    break;
+                case 4: dayLetter = "Thursday";
+                    break;
+                case 5: dayLetter = "Friday";
+                    break;
+                case 6: dayLetter = "Saturday";
+                    break;
+                case 7: dayLetter = "Sunday";
+                    break;
+            }
+            return dayLetter
+        }
+    </script>
+</body>
+
+</html>

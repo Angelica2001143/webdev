@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Write a JavaScript program that compares 2 numbers. Display the larger number in a prompt window. 
+    If both numbers are equal, display the number plus 1 in a prompt window. -->
+    <title>EXERCISE 3</title>
+    <h1>THIS PROGRAM WILL COMPARE BETWEEN YOUR TWO ENTERED NUMBER</h1>
+</head>
+
+<body>
+    
+
+    <script>
+        var num1, num2;
+        num1 = window.prompt("Input First Number", "0");
+        num2 = window.prompt("Input Second Number", "0");
+        num3= parseInt(num2) + 1;
+        if (parseInt(num1) > parseInt(num2)) {
+            alert(num1+" is the largest number.");
+        } else
+            if (parseInt(num2) > parseInt(num1)) {
+                alert(num2+" is the largest number.");
+            } else {
+               alert(num1+ " +  1 = " + num3);
+            }
+    </script>
+</body>
+
+</html>
